@@ -70,6 +70,8 @@ html, body,
       color: #fff;
       font-weight: 900;
       font-size: 30px;
+      padding-top: 20px;
+      padding-bottom: 10px;
     }
     p{
       color: #fff;
@@ -112,11 +114,14 @@ html, body,
     background: #f1f4f7;
     background-color: #f1f4f7;
     & > tbody > tr > th {
-      padding-top: 16px;
+      padding-top: 0;
     }
     .offer {
       background: #fff;
       background-color: #fff;
+      .first-offer {
+        padding-top: 16px;
+      }
       .columns {
         th {
           padding-top: 20px;
@@ -125,19 +130,19 @@ html, body,
           padding-right: 20px;
         }
         & > table {
+          max-width: 568px;
           table-layout: fixed;
         }
       }
       img {
         padding-bottom: 20px;
       }
-      h2{
+      h2 {
         color: #fff;
         font-weight: 900;
         font-size: 30px;
       }
-      
-      p{
+      p {
         color: #334755;
         font-weight: 600;
         font-size: 16px;
@@ -156,7 +161,7 @@ html, body,
         &.tiny_info {
           color: #334755;
           font-size: 10px;
-          font-weight: 30px;
+          font-weight: 300;
           padding-bottom: 10px;
         }
         &.price {
@@ -167,21 +172,44 @@ html, body,
         }
       }
       .button {
-        display: inline-block;
-        width: 160px;
+        background: #14181c;
+        background-color: #14181c;
+        display: block;
+        width: 150px;
         text-align: center;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        background: #13191f;
-        background-color: #13191f;
-        color: #fff;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border: 1px solid #fff;
         border-radius: 3px;
-        margin-bottom: 10px;
+        color: #fff;
+        margin: 0 auto;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      &.last-offer {
+        .group-icons {
+          margin: 0 auto;
+          padding-bottom: 0;
+          width: 190px;
+        }
+        h5 {
+          color: #334755;
+          font-weight: 600;
+          font-size: 16px;
+          text-align: center;
+          padding-bottom: 0px;
+        }
+        p {
+          color: #334755;
+          font-weight: 400;
+          font-size: 14px;
+          text-align: center;
+          padding-bottom: 20px;
+        }
       }
     }
   }
-
-
 .footer {
   background: #000;
   background-color: #000;
